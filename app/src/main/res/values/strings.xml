@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ComprasAndroid</string>
+    <string name="login">LOGIN</string>
+    <string name="text_cadastros">Crie uma conta, Clique Aqui!!</string>
+    <string name="title_cadastros"> Cadastre-se</string>
+
+    <string name="pastaIngredients">Pasta</string>
+
+
+</resources>

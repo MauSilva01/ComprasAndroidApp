@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".listaMercados">
+
+    <ListView
+        android:id="@+id/listViewMercados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCadastroMercado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/buttonCadastroMercado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewMercados" />
+
+    <Button
+        android:id="@+id/ButtomTelaListC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListC"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonLogOut"
+        app:layout_constraintStart_toEndOf="@+id/ButtonTelaListM"
+        app:layout_constraintTop_toTopOf="@+id/ButtonLogOut" />
+
+    <Button
+        android:id="@+id/ButtomTelaHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="1dp"
+        android:text="Home"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ButtomTelaListP"
+        app:layout_constraintEnd_toStartOf="@+id/ButtomTelaListP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ButtomTelaListP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="ListaP"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonTelaListM"
+        app:layout_constraintStart_toEndOf="@+id/ButtomTelaHome"
+        app:layout_constraintTop_toTopOf="@+id/ButtonTelaListM" />
+
+    <Button
+        android:id="@+id/ButtonTelaListM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="ListaM"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ButtomTelaListC"
+        app:layout_constraintEnd_toStartOf="@+id/ButtomTelaListC"
+        app:layout_constraintStart_toEndOf="@+id/ButtomTelaListP" />
+
+    <Button
+        android:id="@+id/ButtonLogOut"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:text="Sair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ButtomTelaListC"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
